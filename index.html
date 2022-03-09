@@ -9,23 +9,29 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>Hola Mundo!</h1>
+	<header>
+		<h1>ChecaTEC</h1>
+	</header>
 	<p>Esta es una calculadora del IMC.</p>
 
-	<div>
-		<label for="peso">Peso: </label>
-		<input type="number" name="peso" id="peso">
-		<label for="peso"> kg</label>
-		<br>
-		<label for="estatura">Estatura: </label>
-		<input type="number" name="estatura" id="estatura">
-		<label for="estatura"> cm</label>
-		<br>
+	<div class="container">
+		<div>
+			<label for="peso" class="label">Peso: </label>
+			<input type="number" name="peso" id="peso">
+			kg
+			<br>
+		</div>
+		<div>
+			<label for="estatura" class="label">Estatura: </label>
+			<input type="number" name="estatura" id="estatura"> cm
+			<br>
+		</div>
 		<input type="button" value="CALCULAR" onclick="calc_IMC()">
 	</div>
 
 	<div>
 		<p id="respuesta"></p>
+		<img src="" alt="">
 	</div>
 </body>
 </html>

@@ -1,5 +1,4 @@
 
-
 function calc_IMC() {
 
 	var peso = document.getElementById('peso').value;
@@ -8,11 +7,7 @@ function calc_IMC() {
 	console.log(peso)
 	console.log(estatura)
 	var imc;
-	imc = peso / estatura**2
-	
-	console.log(peso)
-	console.log(estatura)
-	console.log(isNaN(imc));
+	imc = (peso / estatura**2).toFixed(2)
 
 	var resultado = "Tu IMC es de " + imc
 
