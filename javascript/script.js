@@ -3,16 +3,20 @@
 function calc_IMC() {
 
 	var peso = document.getElementById('peso').value;
-	var estatura = document.getElementById('estatura').value;
+	var estatura = document.getElementById('estatura').value / 100;
 
 	console.log(peso)
 	console.log(estatura)
 	var imc;
-	imc = estatura / peso**2
+	imc = peso / estatura**2
+	
+	console.log(peso)
+	console.log(estatura)
+	console.log(isNaN(imc));
 
 	var resultado = "Tu IMC es de " + imc
 
-	if (imc === NaN) {
+	if (isNaN(imc) || !isFinite(imc)) {
 		resultado += ".\nPor favor introduzca valore validos."
 
 	} else if (imc < 18.6) {
