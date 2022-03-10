@@ -2,7 +2,7 @@
 function calc_IMC() {
 
 	var peso = document.getElementById('peso').value;
-	var estatura = document.getElementById('estatura').value / 100;
+	var estatura = document.getElementById('estatura').value;
 
 	console.log(peso)
 	console.log(estatura)
