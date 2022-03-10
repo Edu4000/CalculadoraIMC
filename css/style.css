@@ -41,3 +41,12 @@ input {
 	margin-top: 10px;
 	height: 40px;
 }
+
+#res {
+	margin-top: 20px;
+	margin-left: 20%;
+	width: 60%;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	border-radius: 20px;
+}
