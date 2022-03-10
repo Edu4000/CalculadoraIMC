@@ -49,4 +49,10 @@ input {
 	padding-top: 70px;
 	padding-bottom: 70px;
 	border-radius: 20px;
+	font-size: 20px;
+}
+
+#img {
+	height: 10%;
+	width: auto;
 }
